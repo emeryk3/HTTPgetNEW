@@ -23,7 +23,10 @@ namespace HTTPgetNEW
 
             Console.WriteLine(response);
 
-            Jokes jokes = JsonConvert.DeserializeObject<Jokes>(response);
+            var ChuckNorrisJoke = JsonConvert.DeserializeObject<ChuckNorrisJoke>(response);
+
+            Console.WriteLine();
+            Console.WriteLine(ChuckNorrisJoke);
 
             Console.ReadLine();
         }
@@ -34,7 +37,7 @@ namespace HTTPgetNEW
     /// <summary>
     ///  Create a class of properties to deserialise the JSON into
     /// </summary>
-    class Jokes
+    class ChuckNorrisJoke
     {
         public string[] categories { get; set; }
         public DateTime created_at { get; set; }
