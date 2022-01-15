@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTPgetNEW", "HTTPgetNEW\HTTPgetNEW.csproj", "{08B2C1D2-C1E6-4E7F-BFE0-C5C9D7CFC281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08B2C1D2-C1E6-4E7F-BFE0-C5C9D7CFC281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B2C1D2-C1E6-4E7F-BFE0-C5C9D7CFC281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B2C1D2-C1E6-4E7F-BFE0-C5C9D7CFC281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B2C1D2-C1E6-4E7F-BFE0-C5C9D7CFC281}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7E5A54A-BA9C-43AC-8677-2E7E2D76D1AA}
+	EndGlobalSection
+EndGlobal
