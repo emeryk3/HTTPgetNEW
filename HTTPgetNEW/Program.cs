@@ -23,16 +23,27 @@ namespace HTTPgetNEW
 
             Console.WriteLine(response);
 
+            Todo todo = JsonConvert.DeserializeObject<Todo>(response);
+
+            foreach (var item in todo)
+            {
+                Console.WriteLine(item.value);
+            }
 
             Console.ReadLine();
         }
 
     }
 
+
+    /// <summary>
+    ///  Create a class of properties to deserialise the JSON into
+    /// </summary>
     class Todo
     {
-        public string categories { get; set; }
-        public int id { get; set; }
-        public string value { get; set; }
+        public string Icon_Url { get; set; }
+        public string Id { get; set; }
+        public string Url { get; set; }
+        public string Value { get; set; }
     }
 }
