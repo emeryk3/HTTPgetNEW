@@ -14,21 +14,16 @@ namespace HTTPgetNEW
         static async Task Main(string[] args)
         {
             Program program = new Program();
-            await program.GetTodoItems();
+            await program.getChuckNorrisJokes();
         }
 
-        private async Task GetTodoItems()
+        private async Task getChuckNorrisJokes()
         {
             string response = await client.GetStringAsync("https://api.chucknorris.io/jokes/random");
 
             Console.WriteLine(response);
 
-            Todo todo = JsonConvert.DeserializeObject<Todo>(response);
-
-            foreach (var item in todo)
-            {
-                Console.WriteLine(item.value);
-            }
+            Jokes jokes = JsonConvert.DeserializeObject<Jokes>(response);
 
             Console.ReadLine();
         }
@@ -39,11 +34,14 @@ namespace HTTPgetNEW
     /// <summary>
     ///  Create a class of properties to deserialise the JSON into
     /// </summary>
-    class Todo
+    class Jokes
     {
-        public string Icon_Url { get; set; }
+        public string[] categories { get; set; }
+        public DateTime created_at { get; set; }
+        public string icon_url { get; set; }
         public string Id { get; set; }
-        public string Url { get; set; }
-        public string Value { get; set; }
+        public DateTime updated_at { get; set; }
+        public string url { get; set; }
+        public string value { get; set; }
     }
 }
